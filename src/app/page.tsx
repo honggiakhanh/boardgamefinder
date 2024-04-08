@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import SearchForm from "@/components/SearchForm";
 import {
   Card,
@@ -5,41 +6,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="max-w-screen-xl mx-auto px-4">
-      <header className="flex justify-between items-center py-4">
-        <div className="flex items-center space-x-4">
-          <Select>
-            <SelectTrigger id="categories">
-              <SelectValue placeholder="Categories" />
-            </SelectTrigger>
-            <SelectContent position="popper">
-              <SelectItem value="strategy">Strategy</SelectItem>
-              <SelectItem value="family">Family</SelectItem>
-              <SelectItem value="party">Party</SelectItem>
-              <SelectItem value="card">Card</SelectItem>
-              <SelectItem value="dice">Dice</SelectItem>
-            </SelectContent>
-          </Select>
-          <div className="size-8 bg-gray-300"></div>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Link className="text-sm" href="#">
-            Login / Create account
-          </Link>
-          <div className="size-8 bg-gray-300"></div>
-        </div>
-      </header>
       <main>
         <section className="text-center py-12">
           <h1 className="text-3xl font-bold mb-4">TableTopFinder</h1>
