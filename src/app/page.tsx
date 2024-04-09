@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import SearchForm from "@/components/SearchForm";
 import {
   Card,
@@ -6,7 +5,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,26 +19,6 @@ export default function Home() {
             game quest.
           </p>
           <SearchForm />
-        </section>
-        <section className="py-8">
-          <h2 className="text-2xl font-semibold mb-4">
-            Most popular board games
-          </h2>
-          <div className="grid grid-cols-5 gap-4">
-            <Card className="w-full">
-              <div className="w-full h-44 bg-gray-300"></div>
-
-              <CardHeader>
-                <CardTitle>Dune: Imperium – Deluxe Upgrade Pack</CardTitle>
-                <CardDescription>€ 62.95</CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-          <div className="text-right mt-4">
-            <Link className="text-blue-600 hover:underline" href="#">
-              Browse more board games
-            </Link>
-          </div>
         </section>
         <section className="py-8">
           <h2 className="text-2xl font-semibold mb-4">Board game discounts</h2>
