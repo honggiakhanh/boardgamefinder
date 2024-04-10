@@ -10,21 +10,21 @@ type Props = {
 
 const BoardGameCard = ({ boardgame }: Props) => {
   return (
-    <Card className="w-full">
-      <Image
-        alt={boardgame.name}
-        width={200}
-        height={150}
-        objectFit="contain"
-        src={boardgame.fullImageLink}
-      ></Image>
-      <CardHeader>
-        <Link href={boardgame.fullProductLink}>
-          <CardTitle>{boardgame.name}</CardTitle>
-        </Link>
-        <CardDescription>€ {boardgame.price}</CardDescription>
-      </CardHeader>
-    </Card>
+    <Link href={boardgame.fullProductLink}>
+      <Card className="w-44 p-4 text-wrap">
+        <Image
+          alt={boardgame.name}
+          width={150}
+          height={100}
+          objectFit="contain"
+          src={boardgame.fullImageLink}
+        ></Image>
+        <CardTitle className="text-md">{boardgame.name}</CardTitle>
+        <CardDescription className="text-md">
+          € {boardgame.price}
+        </CardDescription>
+      </Card>
+    </Link>
   );
 };
 

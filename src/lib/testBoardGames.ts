@@ -2,10 +2,10 @@ import { Store, BoardGame } from "./types";
 
 export const testBoardGames: Store[] = [
   {
-    store: "BoardGameGeek",
+    store: "Lautapelit.fi",
     products: [
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -13,7 +13,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -21,7 +21,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -29,7 +29,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -37,7 +37,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -45,7 +45,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -53,23 +53,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -79,10 +63,10 @@ export const testBoardGames: Store[] = [
     ],
   },
   {
-    store: "BoardGameGeek",
+    store: "Lautapelit.fi",
     products: [
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -90,7 +74,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -98,7 +82,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -106,7 +90,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -114,7 +98,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -122,7 +106,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -130,23 +114,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -156,10 +124,10 @@ export const testBoardGames: Store[] = [
     ],
   },
   {
-    store: "BoardGameGeek",
+    store: "Lautapelit.fi",
     products: [
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -167,7 +135,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -175,7 +143,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -183,7 +151,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -191,7 +159,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -199,7 +167,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -207,23 +175,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -233,10 +185,10 @@ export const testBoardGames: Store[] = [
     ],
   },
   {
-    store: "BoardGameGeek",
+    store: "Lautapelit.fi",
     products: [
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -244,7 +196,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -252,7 +204,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -260,7 +212,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -268,7 +220,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -276,7 +228,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
@@ -284,23 +236,7 @@ export const testBoardGames: Store[] = [
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
       },
       {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
-        price: 5,
-        fullImageLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-        fullProductLink:
-          "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",
-      },
-      {
-        name: "catan",
+        name: "Wingspan - Aasian linnut lisäosa",
         price: 5,
         fullImageLink:
           "https://en.lautapelit.fi/tuotekuvat/520x520/rivalsforcatandeluxe.png",

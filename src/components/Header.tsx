@@ -14,6 +14,9 @@ const Header = (props: Props) => {
   return (
     <header className="flex justify-between items-center py-4">
       <div className="flex items-center space-x-4">
+        <Link href="/" className="text-xl font-bold">
+          BoardGameFInder
+        </Link>
         <Select>
           <SelectTrigger id="categories" className="space-x-2">
             <SelectValue placeholder="Categories" />
@@ -27,7 +30,7 @@ const Header = (props: Props) => {
           </SelectContent>
         </Select>
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-10">
         <Link className="text-sm" href="#">
           Login / Create account
         </Link>
