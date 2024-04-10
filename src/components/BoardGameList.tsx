@@ -10,7 +10,8 @@ type Props = {
 
 const BoardGameList = ({ store }: Props) => {
   return (
-    store.products && (
+    store.products &&
+    store.products.length > 0 && (
       <section className="py-4">
         <h2 className="text-base font-semibold mb-4">
           From {capitalize(store.store)}

@@ -5,6 +5,7 @@ export async function scrapeProduct(productName: string) {
   if (!productName) return;
   let browser;
   let response = [];
+  let selectorTimeout = 2000;
 
   try {
     browser = await puppeteer.connect({
@@ -17,7 +18,9 @@ export async function scrapeProduct(productName: string) {
     try {
       await page?.goto(`${store.searchUrl}${productName}`);
       console.log("Trying: " + store.name);
-      await page?.waitForSelector(store.selectors.product, { timeout: 3000 });
+      await page?.waitForSelector(store.selectors.product, {
+        timeout: selectorTimeout,
+      });
     } catch (error) {
       console.log(`Can't find selector within timeout`);
       response.push({ store: store.name, products: [] });

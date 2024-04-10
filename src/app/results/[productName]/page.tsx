@@ -20,9 +20,12 @@ const page = async ({ params }: Props) => {
         Showing results for: {capitalize(decodeURI(params.productName))}
       </h1>
       <div>
-        {products?.map((store: Store, i: number) => (
-          <BoardGameList store={store} key={i}></BoardGameList>
-        ))}
+        {products?.map(
+          (store: Store, i: number) =>
+            store.products && (
+              <BoardGameList store={store} key={i}></BoardGameList>
+            )
+        )}
       </div>
     </div>
   );
