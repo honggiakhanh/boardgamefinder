@@ -12,8 +12,8 @@ type Props = {
 };
 
 const page = async ({ params }: Props) => {
-  // const products = await scrapeAndStoreProduct(params.productName);
-  const products = testBoardGames;
+  const products = await scrapeAndStoreProduct(params.productName);
+  // const products = testBoardGames;
   return (
     <div>
       <h1 className="text-xl font-semibold mb-5 pt-10">
