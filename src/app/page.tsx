@@ -13,10 +13,10 @@ export default function Home() {
         <section className="text-center py-12">
           <h1 className="text-3xl font-bold mb-4">TableTopFinder</h1>
           <p className="max-w-md mx-auto mb-6">
-            TableTopFinder is the biggest European board game database that will
-            help you discover your favorite tabletop games. Start by choosing a
-            category at the top or use the searchbar below to start your board
-            game quest.
+            TableTopFInder is a Finnish board game scraper that will help you
+            discover your favorite tabletop games that finnish retailers have
+            available. Start by choosing a category at the top or use the
+            searchbar below to start your board game quest.
           </p>
           <SearchForm />
         </section>
