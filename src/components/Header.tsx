@@ -7,6 +7,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import Link from "next/link";
+import LanguagePicker from "./LanguagePicker";
 
 type Props = {};
 
@@ -34,7 +35,7 @@ const Header = (props: Props) => {
         <Link className="text-sm" href="#">
           Login / Create account
         </Link>
-        <div className="size-8 bg-gray-300"></div>
+        <LanguagePicker />
       </div>
     </header>
   );

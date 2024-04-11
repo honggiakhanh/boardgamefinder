@@ -1,4 +1,4 @@
-import { Store, BoardGame } from "./types";
+import { Store } from "./types";
 
 export const testBoardGames: Store[] = [
   {
