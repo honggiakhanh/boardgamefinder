@@ -4,6 +4,7 @@ import BoardGameList from "@/components/BoardGameList";
 import { testBoardGames } from "@/lib/testBoardGames";
 import { Store } from "@/lib/types";
 import { capitalize } from "@/lib/utils";
+import { scrapeProduct } from "@/lib/scraper";
 
 type Props = {
   params: {
@@ -12,7 +13,7 @@ type Props = {
 };
 
 const page = async ({ params }: Props) => {
-  const products = await scrapeAndStoreProduct(params.productName);
+  const products = await scrapeProduct(params.productName);
   // const products = testBoardGames;
   return (
     <div>
