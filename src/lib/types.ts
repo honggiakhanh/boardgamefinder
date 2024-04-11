@@ -5,7 +5,7 @@ export type Store = {
 
 export type BoardGame = {
   name: string;
-  price: number;
+  price: string;
   fullImageLink: string;
   fullProductLink: string;
 };
