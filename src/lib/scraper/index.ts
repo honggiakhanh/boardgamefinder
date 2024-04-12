@@ -5,13 +5,15 @@ export async function scrapeProduct(productName: string) {
   if (!productName) return;
   let browser;
   let response = [];
-  let selectorTimeout = 2000;
+  let selectorTimeout = 5000;
 
   try {
     browser = await puppeteer.connect({
       browserWSEndpoint: `wss://${process.env.BRIGHT_DATA_USERNAME}:${process.env.BRIGHT_DATA_PASSWORD}@${process.env.BRIGHT_DATA_HOST}`,
     });
-  } catch (error) {}
+  } catch (error) {
+    console.log("Failed to connect to browser: " + error);
+  }
 
   for (const store of stores) {
     const page = await browser?.newPage();
@@ -96,3 +98,5 @@ export async function scrapeProduct(productName: string) {
 
   return response;
 }
+
+export const runtime = "edge";
