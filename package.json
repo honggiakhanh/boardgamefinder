@@ -17,6 +17,7 @@
     "flag-icons": "^7.2.1",
     "lucide-react": "^0.364.0",
     "next": "14.1.4",
+    "node": "^18.20.2",
     "puppeteer-core": "^22.6.2",
     "react": "^18",
     "react-dom": "^18",
