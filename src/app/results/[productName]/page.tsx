@@ -15,17 +15,22 @@ type Props = {
 
 const ProductPage = ({ params }: Props) => {
   const [products, setProducts] = useState<Store[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [storeLoading, setStoreLoading] = useState<string>("");
 
   useEffect(() => {
     async function startScraper() {
       for (const store of stores) {
         try {
+          setIsLoading(true);
+          setStoreLoading(store.name);
           const product = await scrapeStores(params.productName, store);
           if (product === undefined || product.products?.length == 0) continue;
           setProducts((prevProducts) => [...prevProducts, product]);
         } catch (error) {
           console.error("Error scraping store:", store.name, error);
         }
+        setIsLoading(false);
       }
     }
 
@@ -44,6 +49,7 @@ const ProductPage = ({ params }: Props) => {
               <BoardGameList store={store} key={i}></BoardGameList>
             )
         )}
+        {isLoading && <div>Fetching board games from: {storeLoading}...</div>}
       </div>
     </div>
   );

@@ -1,10 +1,8 @@
+import BoardGameCard from "@/components/BoardGameCard";
+import BoardGameList from "@/components/BoardGameList";
+import BoardGameListSkeleton from "@/components/BoardGameListSkeleton";
 import SearchForm from "@/components/SearchForm";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { testBoardGames } from "@/lib/testBoardGames";
 
 export default function Home() {
   return (
@@ -20,22 +18,8 @@ export default function Home() {
           </p>
           <SearchForm />
         </section>
-        <section className="py-8">
-          <h2 className="text-2xl font-semibold mb-4">Board game discounts</h2>
-          <div className="grid grid-cols-5 gap-4">
-            <Card className="w-full">
-              <div className="w-full h-44 bg-gray-300"></div>
-
-              <CardHeader>
-                <CardTitle>Roll & Wall</CardTitle>
-                <CardDescription className="text-red-600">
-                  -88.7%
-                </CardDescription>
-                <CardDescription>€ 5.08</CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </section>
+        <BoardGameList store={testBoardGames[0]}></BoardGameList>
+        <BoardGameListSkeleton></BoardGameListSkeleton>
       </main>
     </div>
   );
