@@ -6,6 +6,7 @@ import { capitalize } from "@/lib/utils";
 import { scrapeStores } from "@/lib/scraper";
 import { stores } from "@/lib/scraper/stores";
 import { useEffect, useState } from "react";
+import BoardGameListSkeleton from "@/components/BoardGameListSkeleton";
 
 type Props = {
   params: {
@@ -49,7 +50,14 @@ const ProductPage = ({ params }: Props) => {
               <BoardGameList store={store} key={i}></BoardGameList>
             )
         )}
-        {isLoading && <div>Fetching board games from: {storeLoading}...</div>}
+        {isLoading && (
+          <div>
+            <h2 className="text-base font-semibold">
+              Fetching board games from: {storeLoading}...
+            </h2>
+            <BoardGameListSkeleton></BoardGameListSkeleton>
+          </div>
+        )}
       </div>
     </div>
   );

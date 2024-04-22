@@ -19,7 +19,7 @@ export default function Home() {
           <SearchForm />
         </section>
         <BoardGameList store={testBoardGames[0]}></BoardGameList>
-        <BoardGameListSkeleton></BoardGameListSkeleton>
+        <BoardGameListSkeleton title="Board Game Discounts"></BoardGameListSkeleton>
       </main>
     </div>
   );

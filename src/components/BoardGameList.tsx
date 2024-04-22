@@ -13,7 +13,7 @@ const BoardGameList = ({ store }: Props) => {
     store.products &&
     store.products.length > 0 && (
       <section className="py-4">
-        <h2 className="text-base font-semibold mb-4">
+        <h2 className="text-base font-semibold pb-4">
           From {capitalize(store.store)}
         </h2>
         <div className="w-full">
