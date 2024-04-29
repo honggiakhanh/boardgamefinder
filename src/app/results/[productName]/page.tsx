@@ -31,8 +31,8 @@ const ProductPage = ({ params }: Props) => {
         } catch (error) {
           console.error("Error scraping store:", store.name, error);
         }
-        setIsLoading(false);
       }
+      setIsLoading(false);
     }
 
     startScraper();
@@ -40,9 +40,16 @@ const ProductPage = ({ params }: Props) => {
 
   return (
     <div>
-      <h1 className="text-xl font-semibold mb-5 pt-10">
-        Showing results for: {capitalize(decodeURI(params.productName))}
-      </h1>
+      {isLoading || products.length > 0 ? (
+        <h1 className="text-xl font-semibold mb-5 pt-10">
+          Showing results for: {capitalize(decodeURI(params.productName))}
+        </h1>
+      ) : (
+        <h1 className="text-xl font-semibold mb-5 pt-10">
+          Cannot find any results for:{" "}
+          {capitalize(decodeURI(params.productName))}
+        </h1>
+      )}
       <div>
         {products?.map(
           (store: Store, i: number) =>
@@ -53,7 +60,9 @@ const ProductPage = ({ params }: Props) => {
         {isLoading && (
           <div>
             <h2 className="text-base font-semibold">
-              Fetching board games from: {storeLoading}...
+              Fetching board games from:{" "}
+              {storeLoading ? capitalize(storeLoading) : storeLoading}
+              ...
             </h2>
             <BoardGameListSkeleton></BoardGameListSkeleton>
           </div>
