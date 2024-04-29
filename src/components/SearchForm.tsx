@@ -27,10 +27,10 @@ const SearchForm = (props: Props) => {
         onChange={(e) => setSearchText(e.target.value)}
         name="productName"
         className="w-1/2"
-        placeholder="Search board games"
+        placeholder="Find a board game"
         required
       />
-      <Button className="ml-2">search</Button>
+      <Button className="ml-2">Search</Button>
     </form>
   );
 };

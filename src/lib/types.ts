@@ -22,3 +22,24 @@ export type BoardGame = {
   fullImageLink: string;
   fullProductLink: string;
 };
+
+export type BGG_FetchResult = {
+  items: {
+    termsofuse: string;
+    item: BGG_HotBoardGame[];
+  };
+};
+
+export type BGG_HotBoardGame = {
+  id: string;
+  rank: string;
+  thumbnail: {
+    value: string;
+  };
+  name: {
+    value: string;
+  };
+  yearpublished: {
+    value: string;
+  };
+};

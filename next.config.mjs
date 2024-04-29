@@ -8,27 +8,27 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "en.lautapelit.fi",
-        port: "",
       },
       {
         protocol: "https",
         hostname: "z1.adlibris.com",
-        port: "",
       },
       {
         protocol: "https",
         hostname: "z2.adlibris.com",
-        port: "",
       },
       {
         protocol: "https",
         hostname: "cdn.verk.net",
-        port: "",
       },
       {
         protocol: "https",
         hostname: "www.puolenkuunpelit.com",
-        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "cf.geekdo-images.com",
+        pathname: "/**",
       },
     ],
   },

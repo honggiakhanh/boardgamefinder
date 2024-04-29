@@ -16,8 +16,8 @@ const BoardGameCard = ({ boardgame }: Props) => {
           alt={boardgame.name}
           width={150}
           height={100}
-          objectFit="contain"
           src={boardgame.fullImageLink}
+          className="object-contain rounded-sm mb-2"
         ></Image>
         <CardTitle className="text-md">{boardgame.name}</CardTitle>
         <CardDescription className="text-md">
