@@ -1,9 +1,6 @@
-import BoardGameCard from "@/components/BoardGameCard";
 import BoardGameGeekHot from "@/components/BoardGameGeekHot";
-import BoardGameList from "@/components/BoardGameList";
 import BoardGameListSkeleton from "@/components/BoardGameListSkeleton";
 import SearchForm from "@/components/SearchForm";
-import { testBoardGames } from "@/lib/testBoardGames";
 
 export default function Home() {
   return (

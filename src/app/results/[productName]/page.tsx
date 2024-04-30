@@ -42,12 +42,13 @@ const ProductPage = ({ params }: Props) => {
     <div>
       {isLoading || products.length > 0 ? (
         <h1 className="text-xl font-semibold mb-5 pt-10">
-          Showing results for: {capitalize(decodeURI(params.productName))}
+          Showing results for:{" "}
+          {capitalize(decodeURIComponent(params.productName))}
         </h1>
       ) : (
         <h1 className="text-xl font-semibold mb-5 pt-10">
           Cannot find any results for:{" "}
-          {capitalize(decodeURI(params.productName))}
+          {capitalize(decodeURIComponent(params.productName))}
         </h1>
       )}
       <div>
