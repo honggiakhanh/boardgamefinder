@@ -9,7 +9,7 @@ type Props = {
 const BoardGameCardSkeleton = () => {
   return (
     <div className="w-44 p-4 space-x-2 space-y-2 border rounded-md flex flex-col items-center">
-      <Skeleton className="w-[125px] h-[150px]" />
+      <Skeleton className="w-36 h-36" />
       <div className="space-y-2 w-full">
         <Skeleton className="h-4 w-full" />
         <Skeleton className="h-4 w-10" />
