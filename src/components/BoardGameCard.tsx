@@ -23,7 +23,9 @@ const BoardGameCard = ({ boardgame }: Props) => {
           {boardgame.name}
         </CardTitle>
         <CardDescription className="text-md">
-          € {boardgame.price}
+          {isNaN(parseFloat(boardgame.price))
+            ? "Unknown"
+            : "€" + boardgame.price}
         </CardDescription>
       </Card>
     </Link>
