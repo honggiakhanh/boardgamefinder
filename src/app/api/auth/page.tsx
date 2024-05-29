@@ -27,15 +27,22 @@ export default function AuthPage() {
               Sign in with Google
             </Button>
           </form>
-          <Button
-            className="group relative flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800"
-            variant="outline"
+          <form
+            action={async () => {
+              "use server";
+              await signIn("github");
+            }}
           >
-            <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-              <GithubIcon className="h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400" />
-            </span>
-            Sign in with GitHub
-          </Button>
+            <Button
+              className="group relative flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800"
+              variant="outline"
+            >
+              <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+                <GithubIcon className="h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400" />
+              </span>
+              Sign in with GitHub
+            </Button>
+          </form>
         </div>
       </div>
     </div>
