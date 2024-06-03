@@ -43,3 +43,23 @@ export type BGG_HotBoardGame = {
     value: string;
   };
 };
+
+export type BGG_SearchResult = {
+  items: {
+    total: string;
+    termsofsuse: string;
+    item: [
+      {
+        type: string;
+        id: string;
+        name: {
+          type: string;
+          value: string;
+        };
+        yearpublished: {
+          value: string;
+        };
+      }
+    ];
+  };
+};
