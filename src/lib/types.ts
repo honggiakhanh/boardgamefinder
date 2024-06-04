@@ -48,18 +48,18 @@ export type BGG_SearchResult = {
   items: {
     total: string;
     termsofsuse: string;
-    item: [
-      {
-        type: string;
-        id: string;
-        name: {
-          type: string;
-          value: string;
-        };
-        yearpublished: {
-          value: string;
-        };
-      }
-    ];
+    item: BGG_SearchResult_BoardGame[];
+  };
+};
+
+export type BGG_SearchResult_BoardGame = {
+  type: string;
+  id: string;
+  name: {
+    type: string;
+    value: string;
+  };
+  yearpublished: {
+    value: string;
   };
 };

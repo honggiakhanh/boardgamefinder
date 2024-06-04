@@ -10,6 +10,8 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    console.log("Getting data for: " + name);
+
     const response = await fetch(
       `https://www.boardgamegeek.com/xmlapi2/search?query=${name}&type=boardgame`
     );
