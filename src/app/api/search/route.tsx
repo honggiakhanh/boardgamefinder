@@ -18,7 +18,11 @@ export async function GET(request: NextRequest) {
     const text = await response.text();
 
     const parsedData = (await xmlToJson(text)) as BGG_SearchResult;
-    const items = parsedData.items.item.slice(0, 9);
+
+    let items;
+    if (parsedData.items.item.length > 9) {
+      items = parsedData.items.item.slice(0, 9);
+    }
 
     return NextResponse.json(items);
   } catch (error) {
