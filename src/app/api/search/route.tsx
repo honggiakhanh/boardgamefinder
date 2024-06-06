@@ -15,9 +15,18 @@ export async function GET(request: NextRequest) {
     const response = await fetch(
       `https://www.boardgamegeek.com/xmlapi2/search?query=${name}&type=boardgame`
     );
+
     const text = await response.text();
 
     const parsedData = (await xmlToJson(text)) as BGG_SearchResult;
+
+    if (
+      !parsedData.items ||
+      !parsedData.items.item ||
+      parsedData.items.item.length === 0
+    ) {
+      return NextResponse.json([]);
+    }
 
     const items = parsedData.items.item.slice(0, 9);
 

@@ -14,6 +14,8 @@ const SearchForm = (props: Props) => {
   const [suggestions, setSuggestions] = useState<BGG_SearchResult_BoardGame[]>(
     []
   );
+  const [loading, setLoading] = useState<boolean>(false);
+
   const router = useRouter();
 
   const fetchSuggestions = async (text: string) => {
@@ -24,6 +26,8 @@ const SearchForm = (props: Props) => {
       setSuggestions(data);
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -36,6 +40,7 @@ const SearchForm = (props: Props) => {
 
   useEffect(() => {
     if (searchText) {
+      setLoading(true);
       debounceFetchSuggestions(searchText);
     } else {
       setSuggestions([]);
@@ -75,11 +80,18 @@ const SearchForm = (props: Props) => {
             autoComplete="off"
           />
 
-          {searchText.length > 0 && suggestions.length < 1 ? (
-            <li className="animate-spin mt-2"></li>
-          ) : null}
+          {loading && <li className="animate-spin mt-2"></li>}
 
           <ul className="w-full text-left">
+            {!loading && suggestions.length === 0 && searchText.length > 1 && (
+              <div className="mt-2 rounded-md shadow-lg overflow-hidden">
+                <ul className="py-2">
+                  <li className="truncate text-sm p-2">
+                    No results found in BGG's database for {searchText}
+                  </li>
+                </ul>
+              </div>
+            )}
             {suggestions.length > 0 && (
               <div className="mt-2 rounded-md shadow-lg overflow-hidden">
                 <ul className="py-2">
