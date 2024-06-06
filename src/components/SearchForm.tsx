@@ -6,8 +6,6 @@ import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 import _ from "lodash";
 import { BGG_SearchResult_BoardGame } from "@/lib/types";
-import { Command, CommandEmpty, CommandInput, CommandList } from "./ui/command";
-import { CommandItem } from "cmdk";
 
 type Props = {};
 
@@ -32,7 +30,7 @@ const SearchForm = (props: Props) => {
   const debounceFetchSuggestions = useCallback(
     _.debounce((text: string) => {
       fetchSuggestions(text);
-    }, 1000),
+    }, 500),
     []
   );
 
@@ -55,7 +53,7 @@ const SearchForm = (props: Props) => {
   const handleSuggestionClick = (name: string) => {
     setSearchText(name);
 
-    router.push(`/results/${searchText}`);
+    router.push(`/results/${name}`);
   };
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
