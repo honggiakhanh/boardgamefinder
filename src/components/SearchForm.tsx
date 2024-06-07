@@ -87,7 +87,7 @@ const SearchForm = (props: Props) => {
               <div className="mt-2 rounded-md shadow-lg overflow-hidden">
                 <ul className="py-2">
                   <li className="truncate text-sm p-2">
-                    No results found in BGG's database for {searchText}
+                    No results found in BGG&#39;s database for {searchText}
                   </li>
                 </ul>
               </div>
