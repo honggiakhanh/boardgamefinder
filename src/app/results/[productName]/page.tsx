@@ -66,7 +66,7 @@ const ProductPage = ({ params, searchParams }: Props) => {
       )}
       {isLoading || products.length > 0 ? (
         <h1 className="text-xl font-semibold mb-5 pt-10">
-          Showing results for:{" "}
+          Showing best results for:{" "}
           {capitalize(decodeURIComponent(params.productName))}
         </h1>
       ) : (
