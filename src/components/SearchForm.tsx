@@ -21,7 +21,6 @@ const SearchForm = (props: Props) => {
   const fetchSuggestions = async (text: string) => {
     try {
       const response = await fetch(`/api/search?name=${text}`);
-      console.log("DATA: " + response);
       const data = await response.json();
       setSuggestions(data);
     } catch (error) {
@@ -55,10 +54,10 @@ const SearchForm = (props: Props) => {
     router.push(`/results/${searchText}`);
   };
 
-  const handleSuggestionClick = (name: string) => {
+  const handleSuggestionClick = (name: string, id: string) => {
     setSearchText(name);
 
-    router.push(`/results/${name}`);
+    router.push(`/results/${name}?id=${id}`);
   };
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -99,7 +98,9 @@ const SearchForm = (props: Props) => {
                     <li
                       key={item.id}
                       className="truncate text-sm p-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-                      onClick={() => handleSuggestionClick(item.name.value)}
+                      onClick={() =>
+                        handleSuggestionClick(item.name.value, item.id)
+                      }
                     >
                       {item.name.value}
                     </li>

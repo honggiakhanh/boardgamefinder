@@ -28,7 +28,10 @@ type BGG_HotBoardGame = {
 
 const BoardGameGeekHot = async (props: Props) => {
   const response = await fetch(
-    "https://www.boardgamegeek.com/xmlapi2/hot?type=boardgame"
+    "https://www.boardgamegeek.com/xmlapi2/hot?type=boardgame",
+    {
+      cache: "no-store",
+    }
   );
   const body = await response.text();
   const result = (await xmlToJson(body)) as BGG_FetchResult;

@@ -63,3 +63,48 @@ export type BGG_SearchResult_BoardGame = {
     value: string;
   };
 };
+
+export type BGG_FetchResultWithID = {
+  items: {
+    termsofuse: string;
+    item: BGG_BoardGameInfoByID;
+  };
+};
+
+export type BGG_BoardGameInfoByID = {
+  type: string;
+  id: string;
+  thumbnail: string;
+  image: string;
+  description: string;
+  name: [
+    {
+      type: string;
+      sortindex: string;
+      value: string;
+    }
+  ];
+  yearpublished: {
+    value: string;
+  };
+  minplayers: {
+    value: string;
+  };
+  maxplayers: {
+    value: string;
+  };
+  poll: any;
+  playingtime: {
+    value: string;
+  };
+  minplaytime: {
+    value: string;
+  };
+  maxplaytime: {
+    value: string;
+  };
+  minage: {
+    value: string;
+  };
+  link: any;
+};
