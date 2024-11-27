@@ -26,3 +26,9 @@ export async function xmlToJson(xml: string) {
     );
   });
 }
+
+export function decodeHTMEntities(text: string): string {
+  const textArea = document.createElement("textarea");
+  textArea.innerHTML = text;
+  return textArea.value;
+}

@@ -10,7 +10,7 @@ type Props = {
 
 const BoardGameGeekCard = ({ boardgame }: Props) => {
   return (
-    <Link href={`/results/${boardgame.name.value}`}>
+    <Link href={`/results/${boardgame.name.value}?id=${boardgame.id}`}>
       <Card className="w-44 p-4 text-wrap">
         <Image
           alt={boardgame.name.value}

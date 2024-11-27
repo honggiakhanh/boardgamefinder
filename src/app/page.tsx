@@ -1,5 +1,4 @@
 import BoardGameGeekHot from "@/components/BoardGameGeekHot";
-import BoardGameListSkeleton from "@/components/BoardGameListSkeleton";
 import SearchForm from "@/components/SearchForm";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
           <SearchForm />
         </section>
         <BoardGameGeekHot />
-        <BoardGameListSkeleton title="Board Game Discounts"></BoardGameListSkeleton>
       </main>
     </div>
   );

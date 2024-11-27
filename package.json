@@ -20,7 +20,7 @@
     "flag-icons": "^7.2.1",
     "lodash": "^4.17.21",
     "lucide-react": "^0.364.0",
-    "next": "14.1.4",
+    "next": "^14.2.18",
     "next-auth": "^5.0.0-beta.18",
     "next-themes": "^0.3.0",
     "node": "^18.20.2",

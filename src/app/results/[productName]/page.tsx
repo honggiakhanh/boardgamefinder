@@ -60,7 +60,7 @@ const ProductPage = ({ params, searchParams }: Props) => {
   return (
     <div>
       {boardGameInfo ? (
-        <BoardGameInfo id={id} boardGameInfo={boardGameInfo}></BoardGameInfo>
+        <BoardGameInfo boardGameInfo={boardGameInfo}></BoardGameInfo>
       ) : (
         <div>Getting board game info</div>
       )}

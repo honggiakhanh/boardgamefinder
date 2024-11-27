@@ -1,29 +1,27 @@
 import { BGG_BoardGameInfoByID } from "@/lib/types";
+import { decodeHTMEntities } from "@/lib/utils";
 import _ from "lodash";
 import Image from "next/image";
 
 type Props = {
-  id: string;
   boardGameInfo: BGG_BoardGameInfoByID;
 };
 
-const BoardGameInfo = ({ id, boardGameInfo }: Props) => {
+const BoardGameInfo = ({ boardGameInfo }: Props) => {
   return (
     <div className="w-full mx-auto bg-card text-card-foreground shadow-md rounded-lg overflow-hidden flex px-4">
       <div className="relative w-1/3">
         <Image
           src={boardGameInfo.image}
-          alt={boardGameInfo.name[0].value}
+          alt={boardGameInfo.id}
           layout="fill"
           objectFit="cover"
         />
       </div>
       <div className="p-6 w-2/3">
-        <h2 className="text-2xl font-bold mb-2">
-          {boardGameInfo.name[0].value}
-        </h2>
+        <h2 className="text-2xl font-bold mb-2">{boardGameInfo.id}</h2>
         <p className="text-muted-foreground mb-4">
-          {boardGameInfo.description}
+          {decodeHTMEntities(boardGameInfo.description)}
         </p>
         <div className="flex justify-between mb-2">
           <span className="text-muted-foreground">

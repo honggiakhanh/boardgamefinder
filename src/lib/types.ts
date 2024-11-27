@@ -77,13 +77,14 @@ export type BGG_BoardGameInfoByID = {
   thumbnail: string;
   image: string;
   description: string;
-  name: [
-    {
-      type: string;
-      sortindex: string;
-      value: string;
-    }
-  ];
+  name:
+    | [
+        {
+          type: string;
+          sortindex: string;
+          value: string;
+        }
+      ];
   yearpublished: {
     value: string;
   };
